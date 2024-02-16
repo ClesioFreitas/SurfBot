@@ -1,0 +1,39 @@
+.font-ro-b{
+  font: 700 0.875em 'Roboto';
+}
+
+.font-ro-b2{
+  font: 700 1.125rem 'Roboto';
+}
+
+.font-ali-r1{
+  font: 1.125rem 'Alice';
+}
+
+.font-ali-r2{
+  font: 2.625rem 'Alice';
+}
+
+.font-ali-r3{
+  font: 4.5rem 'Alice';
+}
+
+.font-nu-r1{
+  font: 0.875em 'Roboto';
+}
+
+.font-nu-r2{
+  font: 1.125rem 'Nunito';
+}
+
+.font-nu-b{
+  font: 700 1.125rem 'Nunito';
+}
+
+.font-nu-b1{
+  font: 1.5rem 'Nunito';
+}
+
+.font-nu-b3{
+  font: 700 1.5rem 'Nunito';
+}
