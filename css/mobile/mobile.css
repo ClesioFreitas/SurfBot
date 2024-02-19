@@ -1,0 +1,31 @@
+@media (max-width: 600px){
+  .header-menu{
+    gap: 0 50px;
+    justify-content: center;
+} 
+  .nav-menu{
+    gap: 20px;
+}
+  .nav-menu li{
+    background:var(--cor-c5);
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 10px 10px 8px 10px;
+    transition: .4s;
+}
+  .nav-menu li:hover{
+    background: var(--cor-c4);
+}
+  .nav-menu li::after{
+    display: none;
+  }
+  .nav-menu li a::after{
+    display: none;
+  }
+}
+
+@media (max-width: 400px){
+  .nav-menu{
+    font: 700 0.875rem 'Roboto';
+  }
+}

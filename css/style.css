@@ -1,8 +1,10 @@
 /* Global */
 @import './global/global.css';
-
 /* Cores */
 @import './cores/cores.css';
-
 /* Tipografia */
-@import './tipografia/tipoografia.css';
+@import '../css/tipografia/tipografia.css';
+/* Principal-home */
+@import './principal-home/home.css';
+/* Mobile */
+@import './mobile/mobile.css';
