@@ -22,18 +22,22 @@
   font: 0.875em 'Roboto';
 }
 
+.font-nu-r12{
+  font: 700 0.875em 'Roboto';
+}
+
 .font-nu-r2{
-  font: 1.125rem 'Nunito';
+  font: 1.125rem 'Nunito sans';
 }
 
 .font-nu-b{
-  font: 700 1.125rem 'Nunito';
+  font: 700 1.125rem 'Nunito sans';
 }
 
 .font-nu-b1{
-  font: 1.5rem 'Nunito';
+  font: 1.5rem 'Nunito sans';
 }
 
 .font-nu-b3{
-  font: 700 1.5rem 'Nunito';
+  font: 700 1.5rem 'Nunito sans';
 }

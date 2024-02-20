@@ -29,3 +29,39 @@
     font: 700 0.875rem 'Roboto';
   }
 }
+
+
+
+/* Main */
+
+@media (max-width: 1140px){
+  .col-grid{
+    gap: 70px;
+  }
+  .mapa{
+    width: 500px;
+    bottom: 50px;
+    left: 17px;
+    box-shadow: 0 5px 5px var(--cor-c2);
+    position: relative;
+    margin-right: 30px;
+  }
+  .destaque-aulas h1{
+    margin-bottom: 40px;
+    line-height: 0.875;
+    font: 3.8rem 'Alice';
+  }
+  .icones-img{
+    font-size: 1.12rem;
+  }
+  .icones-img li{
+    gap: 10px;
+  }
+  .destaque-aulas p{
+    color: var(--cor-c4);
+    font: 0.875rem 'Nunito sans';
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+}
