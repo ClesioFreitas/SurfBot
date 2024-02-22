@@ -65,29 +65,88 @@
 
 /* Main */
 
+.escola-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 130px;
+}
+.enviar-email{
+  position: relative;
+}
+
+.enviar-email input{
+  width: 470px;
+  font: 700 1.125rem 'Nunito sans';
+  padding: 13px 20px;
+  border-radius: 4px;
+  border: none;
+  background: var(--cor-c1);
+}
+
+.enviar-email input:focus{
+  outline: none;
+}
+
+.enviar-email input::placeholder{
+  color: var(--cor-b);
+}
+
+.enviar-email a{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 0 4px 4px 0;
+  color: var(--cor-b);
+  font: 700 1.125rem 'Nunito sans';
+  padding: 13px 20px;
+  background: var(--cor-v1);
+  transition: .4s;
+}
+
+.enviar-email a:hover{
+  background: #ee2211;  
+}
+
+.enviar-email a::after{
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url('../../icones/seta.svg') no-repeat;
+}
+
 .col-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 130px;
-  padding: 90px 20px;
+  padding: 20px 20px;
 }
 
 .surfbot{
   object-fit: cover;
 }
 
-.prancha img{
+.prancha{
   object-fit: cover;
   box-shadow: 0 5px 5px var(--cor-c2);
 }
 
 .mapa{
-  width: 500px;
-  bottom: 50px;
-  left: 17px;
-  box-shadow: 0 5px 5px var(--cor-c2);
   position: relative;
-  margin-right: 20px;
+  margin: 0 auto;
+  top: -40px;
+  max-width: 480px;
+  box-shadow: 0 5px 5px var(--cor-c2);
+  border-radius: 0 0 4px 4px;
 }
 
 .chegada-local li{
@@ -180,6 +239,12 @@
   background: url('../../icones/noun_1037169.svg') no-repeat;
 }
 
+.iconeonda{
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
 .destaque-aulas p{
   color: var(--cor-c4);
   font: 1.124rem 'Nunito sans';
@@ -188,11 +253,6 @@
   margin-bottom: 30px;
 }
 
-.iconeonda{
-  position: relative;
-  top: 40px;
-  z-index: 1;
-}
 
 /* Section */
 
@@ -302,10 +362,10 @@
   font: 700 0.875em 'Roboto';
 }
 
-.fundo-bg a{
+.fundo-bg a, 
+.botao{
   color: var(--cor-b);
   background: var(--cor-c4);
-  display: block;
   margin: 20px 60px;
   font: 700 1.125rem 'Nunito sans';
   padding: 15px 13px;
@@ -314,9 +374,27 @@
   align-items: center;
   justify-content: space-between;
   transition: .4s;
+  text-transform: uppercase;
 }
 
-.fundo-bg a:hover{
+.botao{
+  margin: 10px 0 60px 0;
+  gap:  60px;
+  border: none;
+  transition: .4s;
+  cursor: pointer;
+} 
+
+.botao::after{
+  content: '';
+  width: 19px;
+  height: 14px;
+  background: url('../../icones/seta.svg') no-repeat;
+  display: inline-block;
+}
+
+.fundo-bg a:hover,
+.botao:hover{
   background: var(--cor-c6);
 }
 
@@ -352,16 +430,116 @@
 }
 
 
+.h2f{
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  color: var(--cor-c5);
+  grid-column: 1 / -1;
+}
+
+.contato-flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding: 0 20px;
+  margin-bottom: 120px;
+}
+
+.forme-contato {
+  position: relative;
+  padding-right: 90px;
+}
+
+.forme-contato::after{
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 477px;
+  background: var(--cor-c1);
+  top: 0px;
+  right: -20px;
+}
+
+.forme-contato label{
+  display: block;
+  font: 700 1.125rem 'Nunito sans';
+  color: var(--cor-c4);
+}
+
+.forme-contato input,
+.forme-contato textarea {
+  box-sizing: border-box;
+  padding: 15px ;
+  width: 100%;
+  background: var(--cor-c1);
+  border: none;
+  border-radius: 4px;
+  font:500 1.125rem 'Nunito sans';
+  margin-bottom: 15px;
+  resize: none;
+}
 
 
+.forme-contato input:focus, 
+.forme-contato textarea:focus{
+  outline: none;
+}
 
+.contato-empresa{
+  margin-left: 90px;
+}
 
+.contato-empresa h3, 
+.contato-empresa a{
+  font: 700 1.125rem 'Nunito sans';
+  color: var(--cor-c4);
+  margin-bottom: 8px;
+  display: inline-block;
+}
 
+.contato-empresa p{
+  font: 400 1.125em 'Roboto';
+  color: var(--cor-c5);
+  line-height: 1.4;
+}
 
+.contato-empresa a{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.contato-empresa div::after{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  content: '';
+  width: 270px;
+  height: 2px;
+  background: var(--cor-c1);
+}
 
+.contato-empresa div:last-child::after{
+  display: none;
+}
 
+.horario-aberto{
+  position: relative;
+  margin-top: 15px;
+}
 
+.horario-aberto h3::before{
+  display: block;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border: 3px solid #2edd1e;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  margin-left: -20px;
+}
 
 
 /* footer */
@@ -373,20 +551,13 @@
 .footer{
   padding: 35px 20px;
   font: 2.625rem 'Alice';
-}
-
-.footer a{
-  color: var(--cor-b);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer a::after{
-  content: '';
-  display: inline-block;
-  width: 21px;
-  height: 44px;
-  background: url('../../icones/prancha-branca.svg');
+.footer a{
+  color: var(--cor-b);
 }
+
 

@@ -10,11 +10,11 @@
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto&display=swap" rel="stylesheet">
 
 <body>
   <div class="horario-bg">
-    <p class="font-ro-l cor-b container">Aulas na Praia Mansa de Sexta à Domingo das 06:00 à 14:00</p>
+    <p class="font-ro-l cor-b container text-center">Aulas na Praia Mansa de Sexta à Domingo das 06:00 à 14:00</p>
   </div>
   <header class="header-bg">
     <div class="header-menu container">
@@ -33,12 +33,19 @@
   <main>
     <div>
       <img class="surfbot" src="./fotos/seth-doyle-151914.jpg" width="1260" height="500" alt="surfbot">
+      <div class="escola-flex container">
+        <h1 class="font-ali-r3 cor-b">Escolas de Surf</h1>
+        <form action="" class="enviar-email">
+          <input type="email" placeholder="Email">
+          <a href="">MATRICULE-SE</a></b>
+        </form>
+      </div>
     </div>
 
     <div class="col-grid container">
-      <div>
-        <div class="prancha">
-          <img src="./fotos/abigail-lynn-316133.jpg" alt="pranchas" width="570" height="671">
+      <div class="surf-main">
+        <div>
+          <img src="./fotos/abigail-lynn-316133.jpg" class="prancha" alt="pranchas" width="570" height="671">
           <img class="mapa" src="./fotos/mapa.png" alt="mapa" width="540" height="240">
         </div>
 
@@ -111,27 +118,74 @@
           <li>3 horas seguidas de aula</li>
         </ul>
         <span>R$99,00 / Aula</span>
-        <a href="">MATRICULE-SE</a>
+        <a href=""">MATRICULE-SE</a>
       </div>
     </div>
 
     <p>Possui um grupo com mais de <a href="">3 pessoas</a>?</p>
   </section>
 
-  <blockquote class="citacao">
-    <div class="frase-regispereira">
-      <p>“O surf liberta as
-        ondas de uma vida.”</p>
-      <cite>Regis Pereira</cite>
-    </div>
-  </blockquote>
+  <blockquote class=" citacao">
+          <div class="frase-regispereira">
+            <p>“O surf liberta as
+              ondas de uma vida.”</p>
+            <cite>Regis Pereira</cite>
+          </div>
+          </blockquote>
+
+          <main class="container contato-flex">
+            <h2 class="font-ali-r3 h2f">Contato</h2>
+            <section>
+              <form action="" class="forme-contato">
+                <div>
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="contato@email.com">
+                </div>
+                <div>
+                  <label for="mensagem">Mensagem</label>
+                  <textarea class="col-2" rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+                </div>
+                <button type="button" class="botao">Enviar-menagem</button>
+              </form>
+            </section>
 
 
-  <footer class="footer-bg">
-    <div class="footer container">
-      <a href="./index.html">SurfBot</a>
-    </div>
-  </footer>
+            <section class="contato-empresa">
+              <div>
+                <h3>Local</h3>
+                <p>Praia Mansa n-47</p>
+                <p>Rio de Janeiro - RJ</p>
+                <p>Procure a barraca vermelha</p>
+
+                <a href="">VER NO MAPA</a>
+              </div>
+
+              <div>
+                <h3>Email & Telefone</h3>
+                <p>(11) 9875-3456</p>
+                <p>surfbotbrasil@gmail.com</p>
+              </div>
+
+              <div class="horario-aberto">
+                <h3>Horário</h3>
+                <p>De sexta à Sàbado</p>
+                <p>Das 06:00 às 14:00 </p>
+              </div>
+            </section>
+          </main>
+
+          <footer class="footer-bg">
+            <div class="footer container">
+              <a href="./index.html">SurfBot</a>
+              <div>
+                <img src="./icones/prancha-branca.svg" width="18" height="47" alt="">
+              </div>
+            </div>
+          </footer>
 </body>
 
 </html>
