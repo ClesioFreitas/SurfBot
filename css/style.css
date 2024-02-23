@@ -6,5 +6,11 @@
 @import '../css/tipografia/tipografia.css';
 /* Principal-home */
 @import './principal-home/home.css';
+
+/* Aula */
+@import './aula/aula.css';
+
 /* Mobile */
 @import './mobile/mobile.css';
+
+

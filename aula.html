@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurfBot</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto&display=swap" rel="stylesheet">
+
+<body>
+  <header class="header-bg">
+    <div class="header-menu container">
+      <div>
+        <a href="./index.html">
+          <img src="./surfbot.svg" alt="marca-surfbot ">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-menu font-ro-b2">
+          <li><a href="">Praia</a></li>
+          <li><a href="">Aulas</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Matricule-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="h1-fundo">
+    <h1>Aulas</h1>
+  </div>
+
+  <section>
+    <form action="" class="container">
+      <div class="form-flex">
+        <div class="col-1">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email">
+          </div>
+          <div>
+            <label for="cpf">CPF</label>
+            <input type="number" placeholder="000.000.000-00">
+          </div>
+          <div>
+
+            <div class="col-2">
+              <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" placeholder="Rua: avenida">
+              </div>
+              <div>
+                <label for="estado">Estado</label>
+                <input type="text" placeholder="São Paulo">
+              </div>
+              <div>
+                <label for="cep">CEP</label>
+                <input type="number" placeholder="00000-000">
+              </div>
+              <div>
+                <label for="cidade">Cidade</label>
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div>
+                <label for="nome-cartao">Nome do Cartão</label>
+                <input type="text" placeholder="Seu nome">
+              </div>
+              <div>
+                <label for="data">Data da Expiração</label>
+                <div class="expiraçao-flex">
+                  <input type="number" placeholder="Mês">
+                  <input type="number" placeholder="Ano">
+                </div>
+              </div>
+              <div>
+                <label for="cartao">Número do Cartão</label>
+                <input type="number" placeholder="0000.0000.0000.00">
+              </div>
+              <div>
+                <label for="codigo">Código de Segurança</label>
+                <input type="password" placeholder="XXX">
+              </div>
+            </div>
+
+            <p class="debitado">Seu cartão será debitado em <span>R$ 49.00</span></p>
+
+            <button class="Matricule">REALIZAR MATRÍCULA</button>
+
+            <p class="criptografadas">Informações Seguras e Criptografadas</p>
+          </div>
+        </div>
+
+        <div class="plano-matricula ">
+          <h2>Escolhar o Plano </h2>
+
+          <ul class="plano-opcoes-flex">
+            <li>
+              <input type="radio" name="on" id="infantil">
+              <label for="infantil">Infantil</label>
+            </li>
+            <li>
+              <input type="radio" name="on" id="adulto">
+              <label for="adulto">Adulto</label>
+            </li>
+            <li>
+              <input type="radio" name="on" id="profissinal">
+              <label for="profissinal">Profissinal</label>
+            </li>
+          </ul>
+
+          <div class="plano-matricula-bg fundo-bg">
+            <img src="./icones/prancha1.svg" width="85" height="43" alt="">
+            <h2>infantil</h2>
+            <ul class="planos surf3">
+              <li>Público entre 3 a 30 anos</li>
+              <li>Equipamentos fornecidos</li>
+              <li>Horários de Sex. à Sab</li>
+              <li>Curso Privado</li>
+              <li>3 horas seguidas de aula</li>
+            </ul>
+            <span>R$49,00 / Aula</span>
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </section>
+
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a href="./index.html">SurfBot</a>
+      <div>
+        <img src="./icones/prancha-branca.svg" width="18" height="47" alt="">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

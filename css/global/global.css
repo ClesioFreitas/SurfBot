@@ -15,7 +15,8 @@ blockquote,
 p,
 ul,
 li,
-span {
+span, 
+input, label{
   margin: 0;
   padding: 0;
 }

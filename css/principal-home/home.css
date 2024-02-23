@@ -5,6 +5,8 @@
 .header-menu{
   display: flex;
   flex-wrap: wrap;
+  gap: 15px 50px;
+ 
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
@@ -137,6 +139,7 @@
 
 .prancha{
   object-fit: cover;
+  border-radius: 4px;
   box-shadow: 0 5px 5px var(--cor-c2);
 }
 
@@ -241,6 +244,7 @@
 
 .iconeonda{
   position: relative;
+  display: block;
   top: 40px;
   z-index: 1;
 }
